@@ -1,0 +1,58 @@
+{
+  "providers": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-cvnassurance-dev-a0527-authRole",
+      "UnauthRoleArn": "arn:aws:iam::339712831780:role/amplify-cvnassurance-dev-a0527-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::339712831780:role/amplify-cvnassurance-dev-a0527-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-cvnassurance-dev-a0527-deployment",
+      "UnauthRoleName": "amplify-cvnassurance-dev-a0527-unauthRole",
+      "StackName": "amplify-cvnassurance-dev-a0527",
+      "StackId": "arn:aws:cloudformation:us-east-1:339712831780:stack/amplify-cvnassurance-dev-a0527/5d54aa40-2d09-11ef-8010-12c7791524c3",
+      "AmplifyAppId": "d1eg2l7z53g0f3"
+    }
+  },
+  "auth": {
+    "cvnassurance11581b73": {
+      "service": "Cognito",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "customAuth": false,
+      "frontendAuthConfig": {
+        "socialProviders": [],
+        "usernameAttributes": [
+          "EMAIL"
+        ],
+        "signupAttributes": [
+          "EMAIL"
+        ],
+        "passwordProtectionSettings": {
+          "passwordPolicyMinLength": 8,
+          "passwordPolicyCharacters": []
+        },
+        "mfaConfiguration": "OFF",
+        "mfaTypes": [
+          "SMS"
+        ],
+        "verificationMechanisms": [
+          "EMAIL"
+        ]
+      },
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-cvnassurance-dev-a0527-deployment/amplify-cfn-templates/auth/cvnassurance11581b73-cloudformation-template.json",
+        "logicalId": "authcvnassurance11581b73"
+      },
+      "lastPushTimeStamp": "2024-06-18T00:29:05.224Z",
+      "output": {
+        "UserPoolId": "us-east-1_iDAxPc6kN",
+        "AppClientIDWeb": "3eiv25i1tehal41gsi0ppi13n9",
+        "AppClientID": "6bt38eqcqs8tpk9ojq9mc3c51p",
+        "IdentityPoolId": "us-east-1:460825f0-6fba-4f8a-8399-13b29d1de53d",
+        "UserPoolArn": "arn:aws:cognito-idp:us-east-1:339712831780:userpool/us-east-1_iDAxPc6kN",
+        "IdentityPoolName": "cvnassurance11581b73_identitypool_11581b73__dev",
+        "UserPoolName": "cvnassurance11581b73_userpool_11581b73"
+      },
+      "lastPushDirHash": "0sUGmBCK3tugGfEsnG3YsU++tJw="
+    }
+  }
+}

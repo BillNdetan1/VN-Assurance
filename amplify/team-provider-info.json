@@ -1,0 +1,20 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-cvnassurance-dev-a0527-authRole",
+      "UnauthRoleArn": "arn:aws:iam::339712831780:role/amplify-cvnassurance-dev-a0527-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::339712831780:role/amplify-cvnassurance-dev-a0527-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-cvnassurance-dev-a0527-deployment",
+      "UnauthRoleName": "amplify-cvnassurance-dev-a0527-unauthRole",
+      "StackName": "amplify-cvnassurance-dev-a0527",
+      "StackId": "arn:aws:cloudformation:us-east-1:339712831780:stack/amplify-cvnassurance-dev-a0527/5d54aa40-2d09-11ef-8010-12c7791524c3",
+      "AmplifyAppId": "d1eg2l7z53g0f3"
+    },
+    "categories": {
+      "auth": {
+        "cvnassurance11581b73": {}
+      }
+    }
+  }
+}
