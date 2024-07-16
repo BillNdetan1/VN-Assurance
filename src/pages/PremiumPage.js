@@ -9,10 +9,9 @@ import React, { useEffect, useState } from "react";
 
 const PremiumPage = () => {
 
-  const [companyNamme, setcompanyNamme] = useState("");
   const [currentAccount, setCurrentAccount] = useState("");
 
-  const contractAddress = "0x7B51819a691Ed2886f1ac64E8c17cB5073dAb135";
+  const contractAddress = "0x1c6bd9C471CA4F318aD4AC803622AA2A799C436e";
 
   const contractABI = abi.abi;
 
@@ -121,12 +120,12 @@ const seeAttendees = async () => {
       //console.log("Total number of students: ", Number(count));
 
       let seeAttendeesTxn = await towsonContract.getRoster(1).length;
-      if (seeAttendeesTxn.length === 0){
+      if (seeAttendeesTxn === 0){
         console.log("No Validators");
         window.alert("No Current Validators");
       }
       else
-      window.alert("Networks Live Nodes: ", seeAttendeesTxn.length);
+      window.alert("Networks Live Nodes: ", seeAttendeesTxn);
 
 
     // let count = await towsonContract.getAttendees();
@@ -152,7 +151,17 @@ const seeAttendees = async () => {
         <Authenticator>
             
            
-            {!currentAccount && (
+          
+    
+
+            {({ signOut }) => (
+                <div>
+                   
+                    
+                    
+                    <h1>Welcome to your VN Validator</h1>
+                 
+                    {!currentAccount && (
           <button onClick={connectWallet}>
             Connect Wallet
           </button>
@@ -164,16 +173,6 @@ const seeAttendees = async () => {
           <button onClick={seeAttendees}>
             See Live Sepolia Nodes
           </button>
-    
-
-            {({ signOut }) => (
-                <div>
-                   
-                    
-                    
-                    <h1>Welcome to your CVN Validator</h1>
-                 
-        
             
                     <h3>Thank you for signing up!</h3>
                     <button onClick={signOut}>Sign Out</button>
